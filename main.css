@@ -1,0 +1,128 @@
+body {
+	font-family: Arial, sans-serif;
+	text-align: center;
+	margin: 0; /* Remove default body margin */
+	padding: 0; /* Remove default body padding */
+}
+
+.backgroundimg {  /* Create a common class for the background image*/
+  background-image: url("grain with bg.jpg");
+  background-size: cover; /* Set the background image to cover the container */
+  background-position: center; /* Center the background image horizontally and vertically */
+  padding-top: 500px;
+  padding-bottom: 500px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+nav {
+	background: #F8F8FF;
+}
+
+nav ul {
+	float: left;
+	margin-right: 20px;
+}
+
+nav ul li {
+	display: inline-block;
+	line-height: 50px;
+	margin: 0 10px;
+}
+
+nav ul li a {
+	color: white;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-family: "Arial Black", sans-serif; /* Use "Optician Sans" font for the navigation bar links */
+	text-decoration: none;
+	padding: 10px 20px;
+  border-bottom: 2px solid transparent; /* Add transparent border bottom initially */
+  transition: border-bottom-color 0.3s; /* Add transition effect for the underline */
+}
+
+a.active, 
+a:hover {
+	border-bottom-color: #F8F8FF; /* Set the color of the underline on hover and active */
+	transition: .5s;
+}
+
+h1 {
+	color: #F8F8FF;
+	font-size: 50px;
+}
+
+h2 {
+	color: #F8F8FF;
+}
+
+h3 {
+	color: #F8F8FF;
+}
+
+p {
+	color: #F8F8FF;
+}
+
+
+/* Custom style for the home page section */
+.content-home {
+  font-family: "Arial Black", sans-serif;
+  position: fixed; /* Fix the position of the container */
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the content both vertically and horizontally */
+}
+
+/* Custom style for the about section */
+.content-about {
+	font-family: "Arial Black", sans-serif;
+	position: fixed; /* Fix the position of the container */
+  text-align: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the content both vertically and horizontally */
+}
+
+/* Styles for the social media icon */
+.social-buttons {
+  position: fixed;
+  top: 27px;
+  right: 50px;
+}
+
+.social-button {
+  display: inline-block;
+  margin-left: 30px; /* Adjust this value to control the distance between the icons */
+  color: #F8F8FF;;
+  font-size: 32px;
+  text-decoration: none;
+}
+
+.social-button.all:hover {
+  color: #e4405f;
+}
+
+.music-player-container {
+  position: fixed;
+  bottom: 27px;
+  right: 50px;
+}
+
+.music-player {
+  color: #F8F8FF;
+  font-size: 32px;
+  text-decoration: none;
+}
+
+.controls {
+  margin-top: 10px; /* Adjust this value to control the space between the player and the buttons */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls button {
+  margin: 0 10px; /* Adjust this value to control the space between buttons */
+}
